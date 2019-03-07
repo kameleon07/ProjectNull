@@ -1,2 +1,0 @@
-# ProjectNull
-Null Project

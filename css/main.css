@@ -42,6 +42,31 @@ margin-top: -10px;
     background-size: 400px 350px;
     height:100%;
     width:100%;
+  }
+
+.parallax2{
+  height:400px;
+  background-size:cover;  
+  opacity: 0.7;
+  background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.3), rgba(255,255,255,0.1)), url('../images/background.jpg');
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+.parallax3{
+  height:400px;
+  background-size:cover;  
+
+  background: url('../images/background3.jpg');
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
 }
  .line{
 width: 290px;

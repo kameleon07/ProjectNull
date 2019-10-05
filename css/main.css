@@ -37,6 +37,13 @@ body, html {
     height:100%;
     width:100%;
 }
+ .line{
+width: 380px;
+height: 3px;
+border-bottom: 2px solid white;
+position: absolute;
+margin-top: -10px; 
+}
 @media screen and (max-width: 480px) {
   .homeParallax{
   background:url('../images/null_profile.png');
@@ -47,16 +54,11 @@ body, html {
     height:100%;
     width:100%;
   }
-
  .line{
-width: 290px;
-height: 3px;
-border-bottom: 2px solid white;
-position: absolute;
-margin-top: -10px; 
+width: 250px;
+}
 }
 
-}
 .parallax2{
   height:400px;
   background-size:cover;  
@@ -788,13 +790,4 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
 /* line 123, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_blog_part.scss */
 .blog_section .single_blog_text .btn_3 img {
   margin-bottom: 8px;
-}
-
-
- .line{
-width: 380px;
-height: 3px;
-border-bottom: 2px solid white;
-position: absolute;
-margin-top: -10px; 
 }

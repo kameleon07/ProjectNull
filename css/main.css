@@ -91,12 +91,14 @@ width: 250px;
 }
 
 .w3-row{
-  background-color: #0d0d0d;
+  background-color: #04A777;
 }
 .w3-row .w3-quarter{
   color:white;
 }
-
+.w3-row2{
+    background-color: #0d0d0d;
+}
 .parallaxAboutUs .w3-display-middle span{
 font-size:35px;
   color:#fff;

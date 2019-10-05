@@ -4,6 +4,7 @@
 body, html {
    height:100%;
    background-color: black;
+   scroll-behavior: smooth;
 }
 .container{
   color:white;
@@ -11,20 +12,24 @@ body, html {
   margin:0 auto;
   font-size:20px;
   padding:25px;
-
 }
-.container1{
+
+#about{
+     display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+}
+
+.parallaxHomeContainer{
   height:100%;
   width:100%;
 }
- .line{
-width: 380px;
-height: 3px;
-border-bottom: 2px solid white;
-position: absolute;
-margin-top: -10px; 
-}
-.parallax{
+
+.homeParallax{
   background:url('../images/null_profile.png');
   background-attachment: fixed; 
       background-position: center;
@@ -34,7 +39,7 @@ margin-top: -10px;
     width:100%;
 }
 @media screen and (max-width: 480px) {
-  .parallax{
+  .homeParallax{
   background:url('../images/null_profile.png');
   background-attachment: fixed; 
       background-position: center;
@@ -44,30 +49,6 @@ margin-top: -10px;
     width:100%;
   }
 
-.parallax2{
-  height:400px;
-  background-size:cover;  
-  opacity: 0.7;
-  background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.3), rgba(255,255,255,0.1)), url('../images/background.jpg');
-  background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    position: relative;
-}
-.parallax3{
-  height:400px;
-  background-size:cover;  
-
-  background: url('../images/background3.jpg');
-  background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    position: relative;
-}
  .line{
 width: 290px;
 height: 3px;
@@ -75,6 +56,7 @@ border-bottom: 2px solid white;
 position: absolute;
 margin-top: -10px; 
 }
+
 }
 .parallax2{
   height:400px;
@@ -88,8 +70,8 @@ margin-top: -10px;
     text-align: center;
     position: relative;
 }
-.parallax3{
-  height:400px;
+.parallaxAboutUs{
+  height:950px;
   background-size:cover;  
 
   background: url('../images/background3.jpg');
@@ -113,10 +95,8 @@ margin-top: -10px;
 .w3-row .w3-quarter{
   color:white;
 }
-.container p{
-  font-size: 14px;
-}
-.parallax3 .w3-display-middle span{
+
+.parallaxAboutUs .w3-display-middle span{
 font-size:35px;
   color:#fff;
   font-weight: bold;
@@ -393,6 +373,19 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
   .csstransforms .cn-wrapper li {
     font-size: 1.52em;
   }
+
+  .parallaxAboutUs{
+  height:650px;
+  background-size:cover;  
+
+  background: url('../images/background3.jpg');
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
 }
 
 @media screen and (max-width:320px) {
@@ -405,4 +398,404 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
     height: 3em;
     width: 3em;
   }
+}
+.aboutUsText{
+  text-align: left;
+  font-size: 15px;
+}
+
+/* Home */
+#tmHome {
+  padding-top: 30px;
+  padding-bottom: 68px;
+}
+
+.tm-home-left {
+  max-width: 420px;
+  width: 100%;
+  margin-right: 185px;
+}
+
+.tm-home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tm-slogan {
+  font-size: 2.1rem;
+  margin-bottom: 30px;
+}
+
+.tm-home-hr {
+  border-top-color: white;
+  margin-bottom: 30px;
+}
+
+.tm-home-title {
+  font-size: 3.5rem;
+  margin-bottom: 40px;
+}
+
+.tm-home-text {
+  margin-bottom: 47px;
+}
+
+.btn {
+  border-radius: 0;
+  padding: 13px 40px;
+  font-size: 1.3rem;
+}
+
+.btn-primary {
+  background-color: white;
+  border: 0;  
+  color: #3E3F40;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:not(:disabled):not(.disabled).active, 
+.btn-primary:not(:disabled):not(.disabled):active, 
+.show>.btn-primary.dropdown-toggle {
+  background-color: #495057;
+  outline: none;
+  border: none;
+}
+@media (max-width: 767px) {
+  .tm-home-container {
+    flex-direction: column;
+  }
+
+  .tm-home-left {
+    margin-bottom: 50px;
+    margin-right: 0;
+  }
+}
+
+#tmHome h1{
+  font-size:25px;
+}
+
+
+
+/**************** review_part css start ****************/
+/* line 4, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_review.scss */
+.review_part .client_review_part .client_review_img {
+  position: relative;
+  padding-left: 70px;
+  margin-top: 40px;
+}
+
+/* line 8, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_review.scss */
+.review_part .client_review_part .client_review_img img {
+  max-width: 50px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* line 18, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_review.scss */
+.review_part .client_review_single .client_review_text p {
+  font-size: 16px;
+  line-height: 28px;
+  padding: 20px 28px;
+  border: 1px solid #f6ede4;
+  margin: 1px;
+  position: relative;
+  z-index: 1;
+  border-radius:30px 30px 30px 30px;
+}
+
+/* line 26, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_review.scss */
+.review_part .client_review_single .client_review_text p:after {
+  position: absolute;
+  content: "";
+  left: 20px;
+  bottom: -15px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 15px solid #f6ede4;
+  border-bottom-left-radius: 100px;
+}
+
+@media (max-width: 576px) {
+  /* line 18, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_review.scss */
+  .review_part .client_review_single .client_review_text p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 18, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_review.scss */
+  .review_part .client_review_single .client_review_text p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 18, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_review.scss */
+  .review_part .client_review_single .client_review_text p {
+    font-size: 16px;
+  }
+}
+
+/* line 49, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_review.scss */
+.review_part .client_review_single .client_review_text h4 {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #000;
+  padding-top: 6px;
+  line-height: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 576px) {
+  /* line 49, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_review.scss */
+  .review_part .client_review_single .client_review_text h4 {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 49, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_review.scss */
+  .review_part .client_review_single .client_review_text h4 {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 49, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_review.scss */
+  .review_part .client_review_single .client_review_text h4 {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+}
+
+/* line 71, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_review.scss */
+.review_part .client_review_single .client_review_text h4 span {
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  color: #555555;
+}
+
+/* line 80, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_review.scss */
+.review_part .review_icon i {
+  color: #ffb830;
+}
+
+/* line 86, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_review.scss */
+.review_part .center .client_review_text p {
+  border: 1px solid #d6ad86;
+}
+
+/* line 88, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_review.scss */
+.review_part .center .client_review_text p:after {
+  position: absolute;
+  content: "";
+  left: 20px;
+  bottom: -15px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 15px solid #d6ad86;
+  border-bottom-left-radius: 100px;
+}
+
+/* line 101, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_review.scss */
+.review_part .owl-dots {
+  text-align: center;
+  margin-top: 75px;
+}
+
+/* line 104, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_review.scss */
+.review_part .owl-dots button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #f7efe7;
+  margin: 5px;
+}
+
+/* line 111, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_review.scss */
+.review_part .owl-dots .active {
+  color: #d6ad86 !important;
+}
+
+/**************** blog part css start ****************/
+@media (max-width: 576px) {
+  /* line 3, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_blog_part.scss */
+  .blog_item_section .single_blog_item {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 3, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_blog_part.scss */
+  .blog_item_section .single_blog_item {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 3, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_blog_part.scss */
+  .blog_item_section .single_blog_item {
+    margin-bottom: 20px;
+  }
+}
+
+/* line 17, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_blog_part.scss */
+.blog_item_section .single_blog_item:hover .single_blog_text {
+  border: 1px solid transparent;
+  box-shadow: 0px 15px 30px rgba(115, 113, 127, 0.1);
+  background-color: #fff;
+}
+
+/* line 23, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_blog_part.scss */
+.blog_item_section .single_blog_item:hover .btn_3 {
+  color: #d6ad86;
+}
+
+/* line 25, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_blog_part.scss */
+.blog_item_section .single_blog_item:hover .btn_3 a {
+  color: #d6ad86;
+}
+
+/* line 28, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_blog_part.scss */
+.blog_item_section .single_blog_item:hover .btn_3 img {
+  transform: rotateX(-180deg);
+  margin-bottom: 7px;
+}
+
+/* line 36, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_blog_part.scss */
+.blog_item_section .single_blog_img img {
+  width: 100%;
+}
+
+/* line 40, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_blog_part.scss */
+.blog_item_section .single_blog_text {
+  padding: 40px 30px;
+  border: 1px solid #e7e7e7;
+  border-radius: 100px 0px 623px 77px / 0px 50px 128px 58px;
+  background-color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media (max-width: 576px) {
+  /* line 40, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_blog_part.scss */
+  .blog_item_section .single_blog_text {
+    padding: 20px 15px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 40, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_blog_part.scss */
+  .blog_item_section .single_blog_text {
+    padding: 20px 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 40, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_blog_part.scss */
+  .blog_item_section .single_blog_text {
+    padding: 25px 15px;
+  }
+}
+
+/* line 60, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_blog_part.scss */
+.blog_item_section .single_blog_text h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  /* line 60, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_blog_part.scss */
+  .blog_item_section .single_blog_text h3 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 60, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_blog_part.scss */
+  .blog_item_section .single_blog_text h3 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 60, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_blog_part.scss */
+  .blog_item_section .single_blog_text h3 {
+    font-size: 20px;
+  }
+}
+
+/* line 79, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_blog_part.scss */
+.blog_item_section .single_blog_text .btn_3 {
+  color: #2c3033;
+  margin-top: 28px;
+  text-transform: capitalize;
+}
+
+/* line 89, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_blog_part.scss */
+.blog_section .single_blog_text .date .date_item {
+  color: #2c3033;
+  font-size: 15px;
+  margin-right: 19px;
+}
+
+/* line 93, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_blog_part.scss */
+.blog_section .single_blog_text .date .date_item span {
+  color: #d6ad86;
+}
+
+/* line 98, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_blog_part.scss */
+.blog_section .single_blog_text h3 {
+  font-size: 24px;
+  color: #2c3033;
+  line-height: 1.458;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+/* line 105, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_blog_part.scss */
+.blog_section .single_blog_text h3 a {
+  color: #2c3033;
+}
+
+@media (max-width: 576px) {
+  /* line 98, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_blog_part.scss */
+  .blog_section .single_blog_text h3 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 98, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_blog_part.scss */
+  .blog_section .single_blog_text h3 {
+    font-size: 20px;
+  }
+}
+
+/* line 121, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_blog_part.scss */
+.blog_section .single_blog_text .btn_3 {
+  margin-top: 25px;
+}
+
+/* line 123, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_blog_part.scss */
+.blog_section .single_blog_text .btn_3 img {
+  margin-bottom: 8px;
+}
+
+
+ .line{
+width: 380px;
+height: 3px;
+border-bottom: 2px solid white;
+position: absolute;
+margin-top: -10px; 
 }

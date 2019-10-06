@@ -5,6 +5,15 @@ body, html {
    background-color: black;
    scroll-behavior: smooth;
 }
+.main {
+  max-width: 1000px;
+  margin: 3vh;
+  padding: 20px;
+  margin-top:0;
+  margin-right:auto;
+  margin-bottom:0;
+  margin-left:auto;
+}
 .container{
   color:white;
   max-width: 960px;
@@ -792,4 +801,88 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
 /* line 123, /Applications/MAMP/htdocs/palash/cl/july 2019/july/194 Restaurant/194 Restaurant html/sass/_blog_part.scss */
 .blog_section .single_blog_text .btn_3 img {
   margin-bottom: 8px;
+}
+
+
+.parallax4{
+  height:400px;
+  background-size:cover;  
+  background: url('../images/background4.jpg');
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+.parallax4 .w3-display-middle span{
+font-size:35px;
+  color:#fff;
+  font-weight: bold;
+  opacity:0.7;}
+  #myBtnContainer{
+  text-align: center;
+  margin: 2vh;
+}
+
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {column
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  padding: 10px;
+  color: white;
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: black;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn2 {
+  border-radius: 15px;
+  padding-left: 8%;
+  padding-right: 8%; 
+
+  border: none;
+  outline: none;
+
+  background-color: white;
+  cursor: pointer;
+  border-color: #fff;
+}
+
+.btn2:hover {
+  background-color: #ddd;
+}
+
+.btn2.active {
+  background-color: #000;
+  color: white;
+  border-color: white; 
 }

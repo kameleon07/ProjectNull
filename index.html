@@ -21,7 +21,7 @@
 				      <li><a href="#aboutUs"><span class="fa fa-user" aria-hidden="true"></span></a></li>
 				      <li><a href="#stats"><span class="fa fa-bar-chart" aria-hidden="true"></span></a></li>
 				      <li><a href="#home"><span class="fa fa-home" aria-hidden="true"></span></a></li>
-				      <li><a href="#home"><span class="fa fa-folder-open" aria-hidden="true"></span></a></li>
+				      <li><a href="#portfolio"><span class="fa fa-folder-open" aria-hidden="true"></span></a></li>
 				      <li><a href="#contactPage"><span class="fa fa-envelope-open" aria-hidden="true"></span></a></li>
 				     </ul>
 				</div>
@@ -63,7 +63,7 @@
               <p class="tm-home-text">
                The team at Null has successfully implemented variety of small projects, some of which can be accessed through this page. We do also share more details on a particular project and other stories of success on demand. Please do not hesitate to reach out for us with a request!
               </p>
-              <a href="#tmFeatures" class="btn btn-primary">Learn More</a>
+              <a href="#portfolio" class="btn btn-primary">Learn More</a>
             </div>
             <div class="tm-home-right">
               <img src="images/mobile-screen.png" alt="App on Mobile mockup" />
@@ -187,6 +187,105 @@
     </section>
     <!-- review_part end -->
 
+
+  <div>
+  <!-- space between images -->
+      <div class="w3-row2 w3-center w3-padding-16">
+      </div>
+
+      <div id="portfolio" class ="parallax4">
+          <div class="w3-display-middle">
+          <span class="banner_text">OUR PORTFOLIO</span>
+        </div>
+      </div>
+  <!-- space between images -->
+      <div class="w3-row2 w3-center w3-padding-16">
+      </div>
+  </div>
+
+
+
+      <div id="myBtnContainer">
+      <button class="btn2 active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn2" onclick="filterSelection('Applications')"> Applications</button>
+      <button class="btn2" onclick="filterSelection('Websites')"> Websites</button>
+      <button class="btn2" onclick="filterSelection('Software')"> Software</button>
+    </div>
+    <div class="main">
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column Applications">
+        <div class="content">
+          <img src="images/null_profile.png" alt="Mountains" style="width:100%">
+          <h4>Application 1</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column Applications">
+        <div class="content">
+        <img src="images/null_profile.png" alt="Lights" style="width:100%">
+          <h4>Application 2</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column Applications">
+        <div class="content">
+        <img src="images/null_profile.png" alt="Nature" style="width:100%">
+          <h4>Application 3</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      
+      <div class="column Websites">
+        <div class="content">
+          <img src="images/null_profile.png" alt="Car" style="width:100%">
+          <h4>Website 3</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column Websites">
+        <div class="content">
+        <img src="images/null_profile.png" alt="Car" style="width:100%">
+          <h4>Website 2</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column Websites">
+        <div class="content">
+        <img src="images/null_profile.png" alt="Car" style="width:100%">
+          <h4>Website 1</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+
+      <div class="column Software">
+        <div class="content">
+          <img src="images/null_profile.png" alt="Car" style="width:100%">
+          <h4>Software 1</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column Software">
+        <div class="content">
+        <img src="images/null_profile.png" alt="Car" style="width:100%">
+          <h4>Software 2</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column Software">
+        <div class="content">
+        <img src="images/null_profile.png" alt="Car" style="width:100%">
+          <h4>Software 3</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+    <!-- END GRID -->
+    </div>
+
+    <!-- END MAIN -->
+    </div>
+
+
  <!-- contact bit -->
 <div>
     <!-- space between images -->
@@ -207,7 +306,6 @@
 
  <!-- Contact Section -->
   <div class="container" id="contact">
-
     <h2 class="w3-text-light-grey">Contact Us</h2>
     <div class="w3-section">
       <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Sheffield, UK</p>
@@ -229,11 +327,12 @@
         <button class="w3-button w3-black w3-right w3-section" type="submit">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
+        <br></br>
       </form>
   </div>
 
     <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+  <footer class="w3-content w3-center w3-padding-64 w3-text-grey w3-xlarge">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
     <i class="fa fa-snapchat w3-hover-opacity"></i>
@@ -247,6 +346,7 @@
 
 <script src="js/polyfills.js"></script>
 <script src="js/demo1.js"></script>
+<script src="js/filter.js"></script>
 <script src="js/modernizr-2.6.2.min.js"></script>
 
 </body>

@@ -824,18 +824,6 @@ font-size:35px;
   text-align: center;
   margin: 2vh;
 }
-
-
-.row {
-  margin: 10px -16px;
-}
-
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {column
-  padding: 8px;
-}
-
 /* Create three equal columns that floats next to each other */
 .column {
   padding: 10px;
